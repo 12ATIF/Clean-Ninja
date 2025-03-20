@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "clean-ninja-backend": {
+      "main": "src/clean-ninja-backend/main.mo",
+      "type": "motoko"
+    },
+    "clean-ninja-frontend": {
+      "dependencies": [
+        "clean-ninja-backend"
+      ],
+      "source": [
+        "src/clean-ninja-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "clean-ninja-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
