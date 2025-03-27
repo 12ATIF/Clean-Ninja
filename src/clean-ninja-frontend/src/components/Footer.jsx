@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoSvg from '../assets/logo.svg';
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <img 
-                src="/src/clean_ninja_frontend/src/assets/logo.svg" 
+                src={logoSvg}
                 alt="Clean Ninja" 
                 className="h-8 w-auto"
               />

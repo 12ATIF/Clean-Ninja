@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { isAuthenticated, login, logout } from '../../utils/auth';
+import logoSvg from '../assets/logo.svg';
 
 function Navbar() {
   const [isAuth, setIsAuth] = useState(false);
@@ -57,7 +58,7 @@ function Navbar() {
               <Link to="/" className="flex items-center" onClick={closeMenu}>
                 <img
                   className="h-8 w-auto"
-                  src="/src/clean_ninja_frontend/src/assets/logo.svg"
+                  src={logoSvg}
                   alt="Clean Ninja"
                 />
                 <span className="ml-2 text-lg font-bold text-primary-600">Clean Ninja</span>
