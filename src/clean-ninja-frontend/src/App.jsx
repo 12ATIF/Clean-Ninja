@@ -1,30 +1,34 @@
-import { useState } from 'react';
 import { clean_ninja_backend } from 'declarations/clean-ninja-backend';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Map from './pages/Map';
+import Profile from './pages/Profile';
+import Report from './pages/Report';
+import WasteDetail from './pages/WasteDetail';
+import './styles/tailwind.css';
 
 function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    clean_ninja_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
-
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/map" element={<Map />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/report" element={<Report />} />
+            <Route path="/waste/:id" element={<WasteDetail />} />
+          </Routes>
+        </main>
+        
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#f0f0f0"/>
+  <g transform="translate(75,50)">
+    <path d="M60,10 L150,10 L140,100 L70,100 Z" fill="#ccc" stroke="#999" stroke-width="2"/>
+    <path d="M70,20 L140,20 L135,90 L75,90 Z" fill="#aaa" stroke="#999" stroke-width="1"/>
+    <path d="M80,40 L130,40 L125,70 L85,70 Z" fill="#999"/>
+    <line x1="95" y1="30" x2="95" y2="80" stroke="#777" stroke-width="2"/>
+    <line x1="115" y1="30" x2="115" y2="80" stroke="#777" stroke-width="2"/>
+    <path d="M75,60 C85,65 90,55 100,60 C110,65 115,55 125,60 C135,65 140,55 135,60" stroke="#666" stroke-width="1" fill="none"/>
+  </g>
+  <text x="150" y="180" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">Limbah Padat di Sungai</text>
+</svg>

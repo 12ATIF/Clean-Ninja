@@ -1,0 +1,47 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f0fdf4" />
+  
+  <g transform="translate(200, 150)">
+    <!-- Clean grass area -->
+    <g transform="scale(0.8)">
+      <!-- Grass -->
+      <path d="M-100,50 C-100,-20 100,-20 100,50 L-100,50 Z" fill="#dcfce7" stroke="#22c55e" stroke-width="2" />
+      
+      <!-- Trees -->
+      <g transform="translate(-60, 0)">
+        <rect x="-5" y="0" width="10" height="25" fill="#854d0e" />
+        <circle cx="0" cy="-15" r="20" fill="#16a34a" />
+      </g>
+      
+      <g transform="translate(60, 5)">
+        <rect x="-5" y="0" width="10" height="20" fill="#854d0e" />
+        <circle cx="0" cy="-20" r="25" fill="#15803d" />
+      </g>
+      
+      <!-- Flowers -->
+      <g transform="translate(-30, 30)">
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4d7c0f" stroke-width="2" />
+        <circle cx="0" cy="-5" r="5" fill="#facc15" />
+        <circle cx="4" cy="-2" r="5" fill="#facc15" />
+        <circle cx="-4" cy="-2" r="5" fill="#facc15" />
+        <circle cx="2" cy="2" r="5" fill="#facc15" />
+        <circle cx="-2" cy="2" r="5" fill="#facc15" />
+        <circle cx="0" cy="-2" r="3" fill="#ca8a04" />
+      </g>
+      
+      <g transform="translate(30, 20)">
+        <line x1="0" y1="0" x2="0" y2="12" stroke="#4d7c0f" stroke-width="2" />
+        <circle cx="0" cy="-3" r="7" fill="#fb7185" />
+        <circle cx="0" cy="-3" r="3" fill="#e11d48" />
+      </g>
+    </g>
+    
+    <!-- Check mark -->
+    <g transform="translate(0, -80)">
+      <circle cx="0" cy="0" r="30" fill="#bbf7d0" stroke="#16a34a" stroke-width="3" />
+      <path d="M-15,0 L-5,10 L15,-10" stroke="#16a34a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    </g>
+  </g>
+  
+  <text x="200" y="260" font-family="Arial" font-size="16" fill="#15803d" text-anchor="middle">Area yang sudah dibersihkan</text>
+</svg>
